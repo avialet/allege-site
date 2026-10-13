@@ -1,0 +1,41 @@
+{
+  "app": "Allege",
+  "affiche": "Allège",
+  "domaine": "allege.vialet.app",
+  "depot": "avialet/allege",
+  "accroche": "Allège vos images sans les envoyer nulle part.",
+  "titre": ["Allège vos images", "sans les envoyer nulle part."],
+  "sous_titre": "Déposez des photos ou un dossier : Allège les réduit, les convertit et retire les métadonnées, sur votre Mac.",
+  "hero": { "image": "fenetre", "alt": "La fenêtre d'Allège, des images déposées et prêtes à être allégées" },
+  "fonctions": [
+    {
+      "titre": "Un préréglage par intention",
+      "texte": "« Pour un mail : 1600 px au plus, JPEG 80 %, sans métadonnées. » La phrase dit ce qui va se passer, et le poids attendu s'affiche avant de lancer.",
+      "image": "fenetre",
+      "alt": "Les préréglages d'Allège : pour un mail, pour le web, pour impression, juste convertir"
+    },
+    {
+      "titre": "Rien ne part, rien n'est écrasé",
+      "texte": "Tout est calculé sur votre Mac avec les bibliothèques d'images d'Apple. Les originaux restent intacts : le résultat arrive à côté, ou dans le dossier de votre choix.",
+      "image": "detail",
+      "alt": "Allège après traitement : le poids avant et après chaque image, et le fichier produit"
+    }
+  ],
+  "captures": [
+    { "nom": "fenetre", "source": "base-1" },
+    { "nom": "detail", "source": "base-2" }
+  ],
+  "confidentialite": "Allège ne garde rien : ni historique, ni base. Les métadonnées de vos photos (position, appareil, date) sont retirées par défaut, et aucun fichier ne quitte votre Mac. Le seul appel réseau est la lecture de la dernière version publiée sur GitHub, désactivable dans les réglages.",
+  "donnees": "~/Library/Preferences/fr.vialet.allege.plist",
+  "faq": [
+    {
+      "q": "Pourquoi cet avertissement au premier lancement ?",
+      "r": "Allège n'est ni signée avec un certificat Apple Developer ni notarisée, alors macOS bloque le premier lancement. Depuis macOS 15, le contournement « Contrôle-clic, puis Ouvrir » n'existe plus : le passage par Réglages Système est le seul chemin."
+    },
+    {
+      "q": "Comment vérifier le fichier téléchargé ?",
+      "r": "Chaque version publie son empreinte SHA-256. Dans le dossier du téléchargement : <code>shasum -a 256 -c Allege-X.Y.Z.dmg.sha256</code>."
+    }
+  ],
+  "libres": { "apres_hero": "", "apres_fonctions": "", "avant_installer": "" }
+}
